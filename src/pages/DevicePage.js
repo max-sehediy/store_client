@@ -18,7 +18,7 @@ const DevicePage = observer(() => {
         <Container className='mt-2'>
             <Row>
                 <Col md={4}>
-                    <Image src={process.env.REACT_APP_API_URL + device.img} width={300} />
+                    <Image src={process.env.REACT_APP_API_URL + device.img} height={300} />
                 </Col>
                 <Col md={4}>
                     <Row className='d-flex align-items-center'>
