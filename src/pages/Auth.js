@@ -78,7 +78,7 @@ const Auth = observer(() => {
                     </Row>
                 </Form>
             </Card>
-        </Container >
+        </Container>
     )
 }
 )

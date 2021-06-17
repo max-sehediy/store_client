@@ -11,11 +11,17 @@ const DevicePage = observer(() => {
     const { id } = useParams()
     useEffect(() => {
         fetchOneDevice(id).then(data => setDevice(data))
-        console.log(`device`, device)
     }, [])
 
     return (
         <Container className='mt-2'>
+            <Row className='gy-2' gy-2>
+                <Col sm={{ span: 8, order: 1 }} md={{ span: 4, order: 1 }} ><Button variant='outline-info' block className=''>foto 1</Button></Col>
+                <Col sm={{ span: 4, order: 4 }} md={{ span: 4, order: 2 }} ><Button variant='outline-info' block className=''>raiting 2</Button></Col>
+                <Col sm={{ span: 8, order: 3 }} md={{ span: 8, order: 4 }} ><Button variant='outline-info' block className=''>desc 3</Button></Col>
+                <Col sm={{ span: 4, order: 2 }} md={{ span: 4, order: 3 }} ><Button variant='outline-info' block className=''>buy 4</Button></Col>
+
+            </Row>
             <Row>
                 <Col md={4}>
                     <Image src={process.env.REACT_APP_API_URL + device.img} height={300} />

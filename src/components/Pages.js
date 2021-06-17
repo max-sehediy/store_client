@@ -27,4 +27,4 @@ const Pages = observer(() => {
     )
 })
 
-export default Page
+export default Pages
